@@ -48,5 +48,13 @@
                 {{ __('Register') }}
             </x-primary-button>
         </div>
+
+        <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg border border-blue-200 dark:border-blue-800">
+            <p class="text-sm text-blue-800 dark:text-blue-200 font-medium">Demo Super Admin Account:</p>
+            <p class="text-sm text-blue-600 dark:text-blue-400 mt-1">
+                Email: <code class="bg-blue-100 dark:bg-blue-800 px-1 rounded">superadmin@system.com</code><br>
+                Password: <code class="bg-blue-100 dark:bg-blue-800 px-1 rounded">superadmin123</code>
+            </p>
+        </div>
     </form>
 </x-guest-layout>
