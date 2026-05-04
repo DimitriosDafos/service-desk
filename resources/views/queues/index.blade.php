@@ -4,11 +4,11 @@
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 {{ __('Queues') }}
             </h2>
-            @auth()->user()->isTenantAdmin()
+            @if(auth()->user()->isTenantAdmin())
             <a href="{{ route('tenants.queues.create') }}" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
                 {{ __('New Queue') }}
             </a>
-            @endauth
+            @endif
         </div>
     </x-slot>
 
@@ -46,9 +46,9 @@
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         <a href="{{ route('tenants.queues.show', $queue) }}" class="text-blue-600 hover:text-blue-900 mr-3">View</a>
-                                        @auth()->user()->isTenantAdmin()
+                                        @if(auth()->user()->isTenantAdmin())
                                         <a href="{{ route('tenants.queues.edit', $queue) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                        @endauth
+                                        @endif
                                     </td>
                                 </tr>
                                 @empty

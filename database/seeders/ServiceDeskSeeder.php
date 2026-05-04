@@ -134,7 +134,7 @@ class ServiceDeskSeeder extends Seeder
             'name' => 'General Inquiries',
             'description' => 'Queue for general questions',
             'is_active' => true,
-        });
+        ]);
 
         echo "Seeded demo data successfully!\n";
         echo "Admin user: admin@democompany.com / password\n";
