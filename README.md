@@ -216,13 +216,15 @@ This is a **foundation project** - we can customize and extend it to match your 
 
 **For implementation support, custom development, or enterprise features, please contact:**
 
-📧 **Email:** [dafos@protonmail.com]
+📧 **Email:** developer@dafos.eu
 
 ---
 
 ## License
 
-This project is proprietary software. All rights reserved.
+Free to use as a starting framework. MIT License.
+
+Need customization or enterprise features? Implementation support is available — contact us.
 
 ---
 
